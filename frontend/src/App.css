@@ -4,6 +4,14 @@
   padding: 2rem;
   text-align: center;
 }
+.detailsContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.status-radio {
+  flex-direction: row;
+}
 
 .links li{
   list-style: none;

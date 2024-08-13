@@ -1,5 +1,6 @@
 import "./TodoItem.css"
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 type Item = {
     id: string,
@@ -18,11 +19,13 @@ export default function TodoItem(props: TodoItemProps) {
     }
 
     return(
-        <div className="card">
-            <p>Id: {props.item.id}</p>
-            <p>Description: {props.item.description}</p>
-            <p>Status: {props.item.status}</p>
-            <button onClick={()=>deleteItem(props.item.id)}>Delete Todo</button>
-        </div>
+        <Link to={"/detail/" + props.item.id}>
+            <div className="card">
+                <p>Id: {props.item.id}</p>
+                <p>Description: {props.item.description}</p>
+                <p>Status: {props.item.status}</p>
+                <button onClick={()=>deleteItem(props.item.id)}>Delete</button>
+            </div>
+        </Link>
     )
 }

@@ -7,10 +7,10 @@ import Home from "./pages/Home.tsx";
 import Open from "./pages/Open.tsx";
 import Doing from "./pages/Doing.tsx";
 import Done from "./pages/Done.tsx";
+import Detail from "./pages/Detail.tsx";
 
 
 function App() {
-
 
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
             <Route path={"/open"} element={<Open/>}/>
             <Route path={"/doing"} element={<Doing/>}/>
             <Route path={"/done"} element={<Done/>}/>
+            <Route path={"/detail/:id"} element={<Detail/>}/>
         </Routes>
     </>
   )
