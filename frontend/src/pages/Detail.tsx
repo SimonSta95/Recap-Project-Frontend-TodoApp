@@ -10,7 +10,7 @@ type Item = {
 
 export default function Detail() {
 
-    const [data, setData] = useState<Item>();
+    const [data, setData] = useState<Item>({});
     const params = useParams()
 
     console.log(data)
