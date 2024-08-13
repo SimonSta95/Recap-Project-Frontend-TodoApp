@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.links li{
+  list-style: none;
+  padding: 50px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
