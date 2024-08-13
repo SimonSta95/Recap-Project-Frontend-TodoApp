@@ -6,11 +6,10 @@ export default function Header() {
 
     return(
         <ul className="links">
-            <li><Link to={"/Home"}>Home</Link></li>
-            <li><Link to={"/Open"}>Open</Link></li>
-            <li><Link to={"/Doing"}>Doing</Link></li>
-            <li><Link to={"/Done"}>Done</Link></li>
-            <li><Link to={"/New"}>New</Link></li>
+            <li><Link to={"/home"}>Home</Link></li>
+            <li><Link to={"/open"}>Open</Link></li>
+            <li><Link to={"/doing"}>Doing</Link></li>
+            <li><Link to={"/done"}>Done</Link></li>
         </ul>
     )
 }
